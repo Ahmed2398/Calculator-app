@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link data='test' rel="stylesheet" href="style.css">
+\  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <section class="Calco">
+    
+    <main class="Calc">
+        <!-- Change theme -->
+      <div class="thnumb" id="thnumb">
+        <div class="sep"> 1 </div>
+        <div class="sep"> 2 </div>
+        <div class="sep"> 3</div>
+      </div>
+      <div class="selector" id="selector">
+        <div class="title" id="title">
+          calc
+        </div>
+        <div class="theme">
+          THEME
+          <input class="choose-theme" id="chooseTheme" type="range" min="0" max="2" value="0" oninput="change()">
+        </div>
+      </div>
+      <!-- Screen with the operation -->
+      <div class="operation" id="screen">
+        <span id="ope"> </span>
+      </div>
+      <!-- All the keys -->
+      <div class="keys" id="keys">
+        <div class="pad">
+          <div>
+            <button class="numbers" id="num">7</button>
+            <button class="numbers" id="num">8</button>
+            <button class="numbers" id="num">9</button>
+            <button class="del" id="del">DEL</button>
+          </div>
+          <div>
+            <button class="numbers" id="num">4</button>
+            <button class="numbers" id="num">5</button>
+            <button class="numbers" id="num">6</button>
+            <button class="numbers" id="num">+</button>
+          </div>
+          <div>
+            <button class="numbers" id="num">1</button>
+            <button class="numbers" id="num">2</button>
+            <button class="numbers" id="num">3</button>
+            <button class="numbers" id="num">-</button>
+          </div>
+          <div>
+            <button class="numbers" id="num">.</button>
+            <button class="numbers" id="num">0</button>
+            <button class="numbers" id="num">/</button>
+            <button class="numbers" id="num">x</button>
+          </div>
+          <!-- Reset and Equal -->
+          <div>
+            <button class="reset" id="reset">RESET</button>
+            <button class="equal" id="equal">=</button>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Attribution -->
+    <div class="attribution" id="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+      Coded by <a href="#">Ahmed Ashraf</a>
+    </div>
+  </section>
+</body>
+<script src="master.js"></script>
+
+</html>

@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.attribution a {
+    color: hsl(28, 91%, 45%);
+}
+
+body {
+    background-color: hsl(222, 26%, 31%);
+    font-family: 'League Spartan', sans-serif;
+}
+
+.Calco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Calc {
+
+    height: 45rem;
+    width: 36.25rem;
+    margin-top: 3.125rem;
+
+}
+
+.selector {
+    display: flex;
+    color: white;
+}
+
+.title {
+    font-size: 1.875rem;
+    margin-left: 0.625rem;
+}
+
+.theme {
+    margin-left: 23.125rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.operation {
+    background-color: hsl(224, 36%, 15%);
+    height: 7.1875rem;
+    border-radius: 0.3125rem;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 3.75rem;
+    border-radius: 0.9375rem;
+    margin-top: 1.5625rem;
+}
+
+.keys {
+    background-color: hsl(223, 31%, 20%);
+    height: 31.25rem;
+    margin-top: 2.1875rem;
+    border-radius: 0.9375rem;
+}
+
+.pad {
+
+    height: 29.375rem;
+    margin: 1.875rem;
+}
+
+.numbers {
+    width: 6.25rem;
+    height: 3.75rem;
+    border-radius: 0.625rem;
+    border-color: transparent;
+    margin-left: 1.625rem;
+    margin-top: 1.875rem;
+    background-color: hsl(30, 25%, 89%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2.25rem;
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0 0.25rem 0rem 0rem hsl(28, 16%, 65%);
+    cursor: pointer;
+}
+
+.numbers:hover {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.del {
+    width: 6.25rem;
+    height: 3.75rem;
+    border-radius: 0.625rem;
+    border-color: transparent;
+    margin-left: 1.625rem;
+    margin-top: 1.875rem;
+    background-color: hsl(225, 21%, 49%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0.25rem 0rem 0rem hsl(224, 28%, 35%);
+    cursor: pointer;
+}
+
+.del:hover,
+.reset:hover {
+    background-color: #a2b3e1;
+}
+
+.reset {
+    width: 14.375rem;
+    height: 3.75rem;
+    border-radius: 0.625rem;
+    border-color: transparent;
+    margin-left: 1.625rem;
+    margin-top: 1.875rem;
+    background-color: hsl(225, 21%, 49%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0.25rem 0rem 0rem hsl(224, 28%, 35%);
+    cursor: pointer;
+}
+
+.equal {
+    width: 14.375rem;
+    height: 3.75rem;
+    border-radius: 0.625rem;
+    border-color: transparent;
+    margin-left: 1.625rem;
+    margin-top: 1.875rem;
+    background-color: hsl(6, 63%, 50%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0.25rem 0rem 0rem hsl(6, 70%, 34%);
+    cursor: pointer;
+}
+
+.equal:hover {
+    background-color: #f96c5b;
+}
+
+#ope {
+    margin-right: 1.875rem;
+}
+
+.choose-theme {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3.75rem;
+    height: 1.25rem;
+    margin-left: 2.1875rem;
+    background: hsl(223, 31%, 20%);
+    border-radius: 0.625rem;
+}
+
+.choose-theme::-webkit-slider-thumb {
+    height: 0.9375rem;
+    width: 0.9375rem;
+    border-radius: 0.625rem;
+    background: hsl(6, 100%, 51%);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin: 0.125rem;
+}
+
+.choose-theme::-webkit-slider-thumb:hover {
+    height: 0.9375rem;
+    width: 0.9375rem;
+    border-radius: 0.625rem;
+    background: #f96c5b;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin: 0.125rem;
+}
+
+.thnumb {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: flex-end;
+}
+
+.sep {
+    margin-right: 1.125rem;
+    font-size: 0.75rem;
+}
+
+/* responsive */
+@media (max-width: 638px) {
+
+    
+    .Calc {
+        height: 45rem;
+        width: 22.0625rem;
+        margin-top: 3.125rem;
+    }
+    
+    
+    .keys {
+        background-color: hsl(223, 31%, 20%);
+        height: 29.0625rem;
+        margin-top: 2.1875rem;
+        border-radius: 0.625rem;
+    }
+    
+    .pad {
+        height: 29.375rem;
+        margin: 1.5625rem;
+    }
+    
+    .operation {
+        background-color: hsl(224, 36%, 15%);
+        height: 7.1875rem;
+        border-radius: 0.3125rem;
+        color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: stretch;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 3.125rem;
+        border-radius: 0.625rem;
+        margin-top: 1.5625rem;
+    }
+    
+    .numbers {
+        width: 3.75rem;
+        height: 4.0625rem;
+        border-radius: 0.3125rem;
+        border-color: transparent;
+        margin-left: 0.625rem;
+        margin-top: 1.25rem;
+        background-color: hsl(30, 25%, 89%);
+        font-family: 'League Spartan', sans-serif;
+        font-size: 1.875rem;
+        color: hsl(221, 14%, 31%);
+        box-shadow: 0 0.25rem 0rem 0rem hsl(28, 16%, 65%);
+        cursor: pointer;
+    }
+    
+    .del {
+        width: 3.75rem;
+        height: 4.0625rem;
+        border-radius: 0.3125rem;
+        border-color: transparent;
+        margin-left: 0.625rem;
+        margin-top: 1.25rem;
+        background-color: hsl(225, 21%, 49%);
+        font-family: 'League Spartan', sans-serif;
+        font-size: 1.875rem;
+        color: rgb(255, 255, 255);
+        box-shadow: 0 0.25rem 0rem 0rem hsl(224, 28%, 35%);
+        cursor: pointer;
+    }
+    
+    .reset {
+        width: 8.375rem;
+        height: 3.75rem;
+        border-radius: 0.3125rem;
+        border-color: transparent;
+        margin-left: 0.625rem;
+        margin-top: 1.25rem;
+        background-color: hsl(225, 21%, 49%);
+        font-family: 'League Spartan', sans-serif;
+        font-size: 1.25rem;
+        color: rgb(255, 255, 255);
+        box-shadow: 0 0.25rem 0rem 0rem hsl(224, 28%, 35%);
+        cursor: pointer;
+    }
+    
+    .equal {
+        width: 8.375rem;
+        height: 3.75rem;
+        border-radius: 0.3125rem;
+        border-color: transparent;
+        margin-left: 0.625rem;
+        margin-top: 1.25rem;
+        background-color: hsl(6, 63%, 50%);
+        font-family: 'League Spartan', sans-serif;
+        font-size: 1.25rem;
+        color: rgb(255, 255, 255);
+        box-shadow: 0 0.25rem 0rem 0rem hsl(6, 70%, 34%);
+        cursor: pointer;
+    }
+    .theme {
+        margin-left: 9.125rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    
+    .choose-theme {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 3.75rem;
+        height: 1.25rem;
+        margin-left: 2.1875rem;
+        background: hsl(223, 31%, 20%);
+        border-radius: 0.625rem;
+    }
+    
+    }
+
+    @media (max-width: 638px) {
+
+    
+        .Calc {
+            height: 45rem;
+            width: 22.0625rem;
+            margin-top: 3.125rem;
+        }
+        
+        
+        .keys {
+            background-color: hsl(223, 31%, 20%);
+            height: 29.0625rem;
+            margin-top: 2.1875rem;
+            border-radius: 0.625rem;
+        }
+        
+        .pad {
+            height: 29.375rem;
+            margin: 1.5625rem;
+        }
+        
+        .operation {
+            background-color: hsl(224, 36%, 15%);
+            height: 7.1875rem;
+            border-radius: 0.3125rem;
+            color: white;
+            display: flex;
+            flex-direction: row-reverse;
+            align-content: stretch;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 3.125rem;
+            border-radius: 0.625rem;
+            margin-top: 1.5625rem;
+        }
+        
+        .numbers {
+            width: 3.75rem;
+            height: 4.0625rem;
+            border-radius: 0.3125rem;
+            border-color: transparent;
+            margin-left: 0.625rem;
+            margin-top: 1.25rem;
+            background-color: hsl(30, 25%, 89%);
+            font-family: 'League Spartan', sans-serif;
+            font-size: 1.875rem;
+            color: hsl(221, 14%, 31%);
+            box-shadow: 0 0.25rem 0rem 0rem hsl(28, 16%, 65%);
+            cursor: pointer;
+        }
+        
+        .del {
+            width: 3.75rem;
+            height: 4.0625rem;
+            border-radius: 0.3125rem;
+            border-color: transparent;
+            margin-left: 0.625rem;
+            margin-top: 1.25rem;
+            background-color: hsl(225, 21%, 49%);
+            font-family: 'League Spartan', sans-serif;
+            font-size: 1.875rem;
+            color: rgb(255, 255, 255);
+            box-shadow: 0 0.25rem 0rem 0rem hsl(224, 28%, 35%);
+            cursor: pointer;
+        }
+        
+        .reset {
+            width: 8.375rem;
+            height: 3.75rem;
+            border-radius: 0.3125rem;
+            border-color: transparent;
+            margin-left: 0.625rem;
+            margin-top: 1.25rem;
+            background-color: hsl(225, 21%, 49%);
+            font-family: 'League Spartan', sans-serif;
+            font-size: 1.25rem;
+            color: rgb(255, 255, 255);
+            box-shadow: 0 0.25rem 0rem 0rem hsl(224, 28%, 35%);
+            cursor: pointer;
+        }
+        
+        .equal {
+            width: 8.375rem;
+            height: 3.75rem;
+            border-radius: 0.3125rem;
+            border-color: transparent;
+            margin-left: 0.625rem;
+            margin-top: 1.25rem;
+            background-color: hsl(6, 63%, 50%);
+            font-family: 'League Spartan', sans-serif;
+            font-size: 1.25rem;
+            color: rgb(255, 255, 255);
+            box-shadow: 0 0.25rem 0rem 0rem hsl(6, 70%, 34%);
+            cursor: pointer;
+        }
+        .theme {
+            margin-left: 9.125rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+        
+        .choose-theme {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 3.75rem;
+            height: 1.25rem;
+            margin-left: 2.1875rem;
+            background: hsl(223, 31%, 20%);
+            border-radius: 0.625rem;
+        }
+        
+        }
